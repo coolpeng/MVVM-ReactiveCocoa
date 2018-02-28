@@ -43,8 +43,11 @@
     [btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     
+    // 1. 创建信号
+    [self creatSignal];
     
-    // 1.代替代理
+    
+    // 2.代替代理
     // 需求：监听红色按钮点击
     // 之前都是需要通过代理监听，给红色View添加一个代理属性，点击按钮的时候，通知代理做事情
     // rac_signalForSelector:把调用某个对象的方法的信息转换成信号，就要调用这个方法，就会发送信号。
@@ -62,7 +65,19 @@
     // RACCommand:RAC中用于处理事件的类，可以把事件如何处理,事件中的数据如何传递，包装到这个类中，他可以很方便的监控事件的执行过程
     
    // 使用场景:监听按钮点击，网络请求
-    [self practiceRACCommand];
+//    [self practiceRACCommand];
+}
+
+- (void)creatSignal {
+    RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        [subscriber sendNext:@"haha"];
+        [subscriber sendCompleted];
+        return nil;
+    }];
+    
+    [signal subscribeNext:^(id  _Nullable x) {
+        NSLog(@"%@",x);
+    }];
 }
 
 #pragma mark Event
@@ -135,15 +150,6 @@
 - (void)practiceRACCommand {
     
 }
-
-
-
-
-
-
-
-
-
 
 
 
