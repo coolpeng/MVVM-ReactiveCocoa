@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0C6712CC8A739958AA701901 /* Pods_RACPracticeDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D383507C8F5499A2D7657F1B /* Pods_RACPracticeDemo.framework */; };
-		4CB00F05204561F70003D1BD /* Caculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB00F04204561F70003D1BD /* Caculator.m */; };
+		4CB00F122045A4180003D1BD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB00F112045A4180003D1BD /* SecondViewController.m */; };
+		4CB00F1520463FE30003D1BD /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB00F1420463FE30003D1BD /* Person.m */; };
 		4CFF8E902027670F00486403 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF8E8F2027670F00486403 /* AppDelegate.m */; };
 		4CFF8E932027670F00486403 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF8E922027670F00486403 /* ViewController.m */; };
 		4CFF8E962027670F00486403 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CFF8E942027670F00486403 /* Main.storyboard */; };
@@ -38,8 +39,10 @@
 
 /* Begin PBXFileReference section */
 		0AC2B05CF6C2C15CC0A5219C /* Pods-RACPracticeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACPracticeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACPracticeDemo/Pods-RACPracticeDemo.release.xcconfig"; sourceTree = "<group>"; };
-		4CB00F03204561F70003D1BD /* Caculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Caculator.h; sourceTree = "<group>"; };
-		4CB00F04204561F70003D1BD /* Caculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Caculator.m; sourceTree = "<group>"; };
+		4CB00F102045A4180003D1BD /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		4CB00F112045A4180003D1BD /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		4CB00F1320463FE30003D1BD /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		4CB00F1420463FE30003D1BD /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		4CFF8E8B2027670F00486403 /* RACPracticeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACPracticeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFF8E8E2027670F00486403 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4CFF8E8F2027670F00486403 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -120,8 +123,10 @@
 				4CFF8E992027670F00486403 /* LaunchScreen.storyboard */,
 				4CFF8E9C2027670F00486403 /* Info.plist */,
 				4CFF8E9D2027670F00486403 /* main.m */,
-				4CB00F03204561F70003D1BD /* Caculator.h */,
-				4CB00F04204561F70003D1BD /* Caculator.m */,
+				4CB00F102045A4180003D1BD /* SecondViewController.h */,
+				4CB00F112045A4180003D1BD /* SecondViewController.m */,
+				4CB00F1320463FE30003D1BD /* Person.h */,
+				4CB00F1420463FE30003D1BD /* Person.m */,
 			);
 			path = RACPracticeDemo;
 			sourceTree = "<group>";
@@ -351,8 +356,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CB00F05204561F70003D1BD /* Caculator.m in Sources */,
+				4CB00F122045A4180003D1BD /* SecondViewController.m in Sources */,
 				4CFF8E932027670F00486403 /* ViewController.m in Sources */,
+				4CB00F1520463FE30003D1BD /* Person.m in Sources */,
 				4CFF8E9E2027670F00486403 /* main.m in Sources */,
 				4CFF8E902027670F00486403 /* AppDelegate.m in Sources */,
 			);
@@ -521,7 +527,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4W25RQ3FC;
 				INFOPLIST_FILE = RACPracticeDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = coolpeng.RACPracticeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -537,7 +543,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4W25RQ3FC;
 				INFOPLIST_FILE = RACPracticeDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = coolpeng.RACPracticeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
